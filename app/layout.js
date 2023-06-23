@@ -10,7 +10,7 @@ export const metadata = {
 }
 const navBar = ()=>{
   return(
-      <nav className="bg-gray-900 text-emerald-400 text-4xl p-[2rem] flex justify-center items-center">
+      <nav className="bg-gray-950 text-emerald-400 text-2xl p-[1rem] flex justify-center items-center">
         <Link href="/">Logo</Link>
       </nav>
   )
@@ -18,7 +18,7 @@ const navBar = ()=>{
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-gray-950`}>
       {navBar()}
         {children}
       </body>

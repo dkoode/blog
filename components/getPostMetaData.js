@@ -14,7 +14,8 @@ const getPostMetaData = () =>{
             title: matterResult.data.title,
             date: matterResult.data.date,
             subtitle: matterResult.data.subtitle,
-            slug: fileName.replace(".md", "")
+            slug: fileName.replace(".md", ""),
+            image: matterResult.data.image,
         }
     })
     return posts;
